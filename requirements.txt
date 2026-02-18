@@ -1,0 +1,11 @@
+numpy 
+# library(vec or matrices)
+langchain
+langchain_groq
+# (lib to access groq)
+langchain_core
+langchain_community
+pymongo
+fastapi
+uvicorn
+python-multipart

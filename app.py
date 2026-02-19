@@ -37,11 +37,15 @@ app = FastAPI(title="Diet Specialist Chatbot")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "https://luminaai-fgg6.onrender.com",
+        "http://localhost:5173",
+    ],
+    allow_credentials=False,  # 👈 IMPORTANT
     allow_methods=["*"],
     allow_headers=["*"],
-    allow_credentials=True
 )
+
 
 
 # -------------------- REQUEST MODEL --------------------

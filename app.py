@@ -37,7 +37,10 @@ app = FastAPI(title="Diet Specialist Chatbot")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+     allow_origins=[
+        "https://luminaai-fgg6.onrender.com",
+        "http://localhost:5173",
+    ],
     allow_methods=["*"],
     allow_headers=["*"],
     allow_credentials=True
@@ -84,7 +87,7 @@ def get_history(user_id: str):
 # -------------------- ROUTES --------------------
 @app.get("/")
 def home():
-    return {"message": "Welcome to the Diet Specialist Chatbot 🥗"}
+    return {"message": "Welcome to the Diet Specialist Chatbot"}
 
 
 @app.post("/chat")

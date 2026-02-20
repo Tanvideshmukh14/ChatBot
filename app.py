@@ -88,7 +88,7 @@ def get_history(user_id: str):
 # -------------------- ROUTES --------------------
 @app.get("/")
 def home():
-    return {"message": "Welcome to the Diet Specialist Chatbot"}
+    return {"message": "Welcome to the Code Specialist Chatbot"}
 
 
 @app.post("/chat")

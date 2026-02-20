@@ -33,7 +33,7 @@ collection = db["users"]
 
 
 # -------------------- FASTAPI --------------------
-app = FastAPI(title="Diet Specialist Chatbot")
+app = FastAPI(title="Code Specialist Chatbot")
 
 app.add_middleware(
     CORSMiddleware,
@@ -56,7 +56,7 @@ class ChatRequest(BaseModel):
 
 # -------------------- PROMPT --------------------
 prompt = ChatPromptTemplate.from_messages([
-    ("system", "You are a professional diet specialist. Answer only questions related to healthy eating, nutrition, and fitness."),
+    ("system", "You are Lumina, an elite AI Developer Productivity Copilot and Senior Software Architect. Your goal is to help developers ship high-quality, performant, and secure code with maximum efficiency."),
     MessagesPlaceholder(variable_name="history"),
     ("user", "{question}")
 ])
